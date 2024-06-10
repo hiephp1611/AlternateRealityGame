@@ -1,0 +1,6 @@
+# Ignore user-specific config directories
+**/.next
+**/.vscode
+
+# Ignore node modules
+**/node_modules

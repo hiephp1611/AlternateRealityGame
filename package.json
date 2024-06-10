@@ -1,0 +1,30 @@
+{
+  "name": "arg",
+  "version": "1.0.0",
+  "description": "Welcome to the GitHub repository for the DATX11/DIT561 Alternate Reality Game.",
+  "main": "index.js",
+  "scripts": {
+    "arg": "run test",
+    "test": "jest",
+    "start-blog": "cd blog && npm run dev",
+    "start-evilcorp": "cd evilcorp && npm run dev",
+    "start-all": "npm test && shx cp globalsettings.ts blog/globalsettings.ts && shx cp globalsettings.ts evilcorp/globalsettings.ts && concurrently \"npm run start-blog\" \"npm run start-evilcorp\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DATX11-VT23-09/arg.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DATX11-VT23-09/arg/issues"
+  },
+  "homepage": "https://github.com/DATX11-VT23-09/arg#readme",
+  "dependencies": {
+    "@types/jest": "^29.5.1",
+    "concurrently": "^8.0.1",
+    "shx": "^0.3.4",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1"
+  }
+}
